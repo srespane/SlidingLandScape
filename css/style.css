@@ -1,0 +1,165 @@
+#home-page-slide{position:relative;overflow:hidden;}
+#home-page-slide h2{text-align:center;font-size:1.563em;font-weight:300;margin-right: 80px;}
+/* #home-page-slide .topo{position:absolute;top:10px;right:50%;margin-right:-540px;z-index:9000;} */
+#main {height: auto;margin: 0 auto;position: relative;padding-top:400px;}
+#preload-image {position: absolute;width: 1px;height: 1px;left: -99999px;overflow: hidden;}
+#preload-image img {position: absolute;top: 0;font-size: 0;vertical-align: middle;}
+
+#slides {
+    background: url("../sfiles/img/slide/background_new.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    display: block;
+    height: 400px;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+	overflow:hidden;
+	background-position-x: 0px;
+	opacity: 1;
+}
+.animateSlides{
+	-webkit-animation: animatedBackground 50s linear 1;
+	-moz-animation: animatedBackground 50s linear 1;
+	-ms-animation: animatedBackground 50s linear 1;
+	animation: animatedBackground 50s linear 1;
+	-webkit-animation-timing-function: ease-in-out; /* Chrome, Safari, Opera */
+    animation-timing-function:  ease-in-out;   
+	-webkit-animation-fill-mode: forwards; /* Chrome, Safari, Opera */
+	animation-fill-mode: forwards;	
+}
+
+.rewindBg{
+	-webkit-animation: rewindBackground 3s linear 1;
+	-moz-animation: rewindBackground 3s linear 1;
+	-ms-animation: rewindBackground 3s linear 1;
+	animation: rewindBackground 3s linear 1;
+	-webkit-animation-timing-function: ease-in-out; /* Chrome, Safari, Opera */
+    animation-timing-function:  ease-in-out;   
+	-webkit-animation-fill-mode: forwards; /* Chrome, Safari, Opera */
+	animation-fill-mode: forwards;	
+}
+
+/* Frenar la animacion on hover */
+#home-page-slide:hover  #slides {-webkit-animation-play-state: paused;animation-play-state: paused;}
+#home-page-slide:hover  #grass {-webkit-animation-play-state: paused;animation-play-state: paused;}
+#home-page-slide:hover  #objects {-webkit-animation-play-state: paused;animation-play-state: paused;}
+/* #home-page-slide:hover  .clickCircle0 {-webkit-animation-play-state: paused;animation-play-state: paused;} */
+ 
+  
+ 
+#slides #objects, #slides #circles, #slides #grass, #slides #tree {height: 400px;left: 0;position: absolute;top: 0;width: 100%;}
+
+#slides #grass {
+    background: url("../sfiles/img/slide/plano_intermedio.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    z-index: 7;
+	background-position-x: 0px;
+
+}
+
+.animateGrass{
+	-webkit-animation: animatedBackground 45s linear 1;
+	-moz-animation: animatedBackground 45s linear 1;
+	-ms-animation: animatedBackground 45s linear 1;
+	animation: animatedBackground 45s linear 1;
+	-webkit-animation-timing-function: ease-in-out; /* Chrome, Safari, Opera */
+    animation-timing-function:  ease-in-out; 
+	-webkit-animation-fill-mode: forwards; /* Chrome, Safari, Opera */
+	animation-fill-mode: forwards;	
+}
+
+
+#slides #objects {
+    background: url("../sfiles/img/slide/plano_delantero.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    z-index: 9;
+	background-position-x: 0px;
+}
+
+.animateObjects{
+	-webkit-animation: animatedBackground 40s linear 1;
+	-moz-animation: animatedBackground 40s linear 1;
+	-ms-animation: animatedBackground 40s linear 1;
+	animation: animatedBackground 40s linear 1;
+	-webkit-animation-timing-function: ease-in-out; /* Chrome, Safari, Opera */
+    animation-timing-function:  ease-in-out; 
+	-webkit-animation-fill-mode: forwards; /* Chrome, Safari, Opera */
+	animation-fill-mode: forwards;	
+}
+	
+#slides #circles {
+
+}
+.clickCircle0{width:6740px;height:400px;display:block;position:absolute;top:0;left:0;z-index:9;
+	-webkit-animation: movingLink 44s linear 1;
+	-moz-animation: movingLink 44s linear 1;
+	-ms-animation: movingLink 44s linear 1;
+	animation: movingLink 44s linear 1;
+	-webkit-animation-timing-function: ease-in-out; /* Chrome, Safari, Opera */
+    animation-timing-function:  ease-in-out; 
+	-webkit-animation-fill-mode: forwards; /* Chrome, Safari, Opera */
+	animation-fill-mode: forwards;	
+}
+/* .clickCircle0 .link{text-indent:-9999px;position:absolute;display:block; border:solid 5px grey;}
+.clickCircle0 .link1{top: 10px; height: 350px;left: 125px;width: 328px;}
+.clickCircle0 .link0{bottom:0px;left:511px;width:325px;height:202px;}
+.clickCircle0 .link2{bottom:42px;left:1186px;width:268px;height:197px;}
+.clickCircle0 .link3{bottom:0px;left:1475px;width:245px;height:265px;}
+.clickCircle0 .link4{bottom:5px;left:1731px;width:1090px;height:232px;}
+.clickCircle0 .link5{bottom:0px;left:2945px;width:270px;height:215px;}
+.clickCircle0 .link6{bottom:0px;left:3391px;width:222px;height:243px;}
+.clickCircle0 .link7{top:62px;left:3686px;width:163px;height:187px;}
+.clickCircle0 .link8{top:174px;left:3942px;width:217px;height:230px;}
+.clickCircle0 .link9{bottom:0;left:4635px;width:193px;height:248px;}
+.clickCircle0 .link10{bottom:0;left:5110px;width:228px;height:283px;}
+.clickCircle0 .link11{bottom:0;left:5446px;width:299px;height:206px;}
+.clickCircle0 .link12{top:124px;left:5915px;width:308px;height:234px;}
+.clickCircle0 .link13{top:20px;left:4340px;width:305px;height:340px;}
+.clickCircle0 .link14{top:216px;left:860px;width:232px;height:152px;}
+.clickCircle0 .link15{bottom:0;left:4940px;width:110px;height:283px;} */
+
+#home-page #shell {height: auto;padding-top: 0;position: relative;width: 100%;}
+
+#main #prev-arrow, #main #next-arrow {
+    height: 30px;
+    position: absolute;
+	top:200px;
+	width: 30px;
+	display:block;
+    z-index: 2100;
+	transition: background-color 0.15s ease-in 0s;
+}
+#main #prev-arrow:hover, #main #next-arrow:hover {
+    cursor: pointer;
+    background-color:#cde1fa;
+	transition: background-color 0.15s ease-in 0s;
+}
+
+#prev-arrow {background: url("../sfiles/img/icons/arrowLeft.png") no-repeat scroll 0 0 #0069e1;left: 0px;}
+#next-arrow {background: url("../sfiles/img/icons/arrowRight.png") no-repeat scroll 0 0 #0069e1;right: 0px;}
+#prev-arrow:hover,#main #next-arrow:hover{transition: background-color 0.15s ease-in 0s;}
+
+
+/* animaciones */
+
+
+@keyframes animatedBackground {from { background-position: 0 0; }to { background-position: 100% 0; }}
+@-webkit-keyframes animatedBackground {from { background-position: 0 0; }to { background-position: 100% 0; }}
+@-ms-keyframes animatedBackground {from { background-position: 0 0; }to { background-position: 100% 0; }}
+@-moz-keyframes animatedBackground {from { background-position: 0 0; }to { background-position: 100% 0; }}
+
+@keyframes rewindBackground {from { background-position: 100% 0; }to { background-position: 0 0; }}
+@-webkit-keyframes rewindBackground {from { background-position: 100% 0; }to { background-position: 0 0; }}
+@-ms-keyframes rewindBackground {from { background-position: 100% 0; }to { background-position: 0 0; }}
+@-moz-keyframes rewindBackground {from { background-position: 100% 0; }to { background-position: 0 0; }}
+
+
+@keyframes movingLink{from{left:0px;}to{left:-6740px;}}
+@-webkit-keyframes movingLink{from{left:0px;}to{left:-6740px;}}
+@-ms-keyframes movingLink{from{left:0px;}to{left:-6740px;}}
+@-moz-keyframes movingLink{from{left:0px;}to{left:-6740px;}}
+
+
+
+
+
+
